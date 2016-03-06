@@ -1,3 +1,7 @@
+# 修改记录
+# 日期			修改人			描述
+# 20160306		刘旭升			feat: 支持zynq-motion项目
+
 dtb-$(CONFIG_S5PC100) += s5pc1xx-smdkc100.dtb
 dtb-$(CONFIG_S5PC110) += s5pc1xx-goni.dtb
 dtb-$(CONFIG_EXYNOS4) += exynos4210-origen.dtb \
@@ -43,6 +47,7 @@ dtb-$(CONFIG_ARCH_ZYNQ) += zynq-zc702.dtb \
 	zynq-zed.dtb \
 	zynq-zybo.dtb \
 	zynq-microzed.dtb \
+	zynq-motion.dtb \
 	zynq-cc108.dtb \
 	zynq-afx-nand.dtb \
 	zynq-afx-nor.dtb \

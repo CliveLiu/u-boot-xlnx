@@ -1,3 +1,7 @@
+# 修改记录
+# 日期          修改人          描述
+# 20160306      刘旭升          feat: 支持zynq-motion项目
+
 if ARCH_ZYNQ
 
 config ZYNQ_CUSTOM_INIT
@@ -17,6 +21,9 @@ config TARGET_ZYNQ_ZED
 
 config TARGET_ZYNQ_MICROZED
 	bool "Zynq MicroZed"
+
+config TARGET_ZYNQ_MOTION
+    bool "Zynq Motion"
 
 config TARGET_ZYNQ_PICOZED
 	bool "Zynq PicoZed"
@@ -68,6 +75,7 @@ config SYS_SOC
 config SYS_CONFIG_NAME
 	default "zynq_zed" if TARGET_ZYNQ_ZED
 	default "zynq_microzed" if TARGET_ZYNQ_MICROZED
+	default "zynq_motion" if TARGET_ZYNQ_MOTION
 	default "zynq_picozed" if TARGET_ZYNQ_PICOZED
 	default "zynq_zc70x" if TARGET_ZYNQ_ZC702 || TARGET_ZYNQ_ZC706 \
 			        || TARGET_ZYNQ_ZC70X
