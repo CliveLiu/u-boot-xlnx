@@ -14,7 +14,7 @@
 #ifndef __CONFIG_ZYNQ_MOTION_H
 #define __CONFIG_ZYNQ_MOTION_H
 
-#define CONFIG_SYS_SDRAM_SIZE               (512 * 1024 * 1024)
+#define CONFIG_SYS_SDRAM_SIZE               (382 * 1024 *1024)
 
 #define CONFIG_ZYNQ_SERIAL_UART1
 #define CONFIG_ZYNQ_GEM0
